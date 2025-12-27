@@ -1,0 +1,294 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:fa151777-559a-30ce-b5c1-d9a4c1447bdf",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2025-12-27T14:56:21Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/ru.demo/sbom-demo@1.0?type=jar",
+      "group" : "ru.demo",
+      "name" : "sbom-demo",
+      "version" : "1.0",
+      "description" : "SBOM demo project for Dependency-Track",
+      "purl" : "pkg:maven/ru.demo/sbom-demo@1.0?type=jar"
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeAggregateBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.logging.log4j",
+      "name" : "log4j-core",
+      "version" : "2.14.0",
+      "description" : "The Apache Log4j Implementation",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "862c00b2e854f9c0f1e8d8409d23d899"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "e257b0562453f73eabac1bc3181ba33e79d193ed"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "f04ee9c0ac417471d9127b5880b96c3147249f20674a8dbb88e9949d855382a8"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "07c7d55c6dec2f321b57e47f5cd759c496b6f291a719d91a5008a2b551c2470cf25a72b7f0bb7109c6975f150da0133de6c623a766f7082b05717a4d9542a011"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "04bc1f5cf230c967c1bf4023de65e4c216c6da5eaedb1d021d31fcbd108fd749415de5d7ad47cfaef7b7017ce289e831"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://logging.apache.org/log4j/2.x/log4j-core/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://ci-builds.apache.org/job/Logging/job/log4j/"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://logging.apache.org/log4j/2.x/download.html"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/LOG4J2"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://lists.apache.org/list.html?log4j-user@logging.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://gitbox.apache.org/repos/asf?p=logging-log4j2.git/log4j-core"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.logging.log4j",
+      "name" : "log4j-api",
+      "version" : "2.14.0",
+      "description" : "The Apache Log4j API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "4876a0d414b3c2a01c10b6e96d70b62d"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "23cdb2c6babad9b2b0dcf47c6a2c29d504e4c7a8"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "9791ac85aa3cdad633e512192766f84995eddf4db188cc42facec52a0dae15e8"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "4c56cf3789525ae789152dd13917d7c707762209a0c697e93b5167d13d33f59465d99a13482d418c14d3e0ca3c66626efcd05c0f77e2b74a65bfede0cc2c878d"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "862a45b711e339fd3f861a54af042ddb58f79ef90288c4475f5e3796d24c0a4eefd6c10861b1037688dba766a9f6b95e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://logging.apache.org/log4j/2.x/log4j-api/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://ci-builds.apache.org/job/Logging/job/log4j/"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://logging.apache.org/log4j/2.x/download.html"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/LOG4J2"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://lists.apache.org/list.html?log4j-user@logging.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://gitbox.apache.org/repos/asf?p=logging-log4j2.git/log4j-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/commons-collections/commons-collections@3.2.1?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "commons-collections",
+      "name" : "commons-collections",
+      "version" : "3.2.1",
+      "description" : "Types that extend and augment the Java Collections Framework.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "13bc641afd7fd95e09b260f69c1e4c91"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "761ea405b9b37ced573d2df0d1e3a4e0f9edc668"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "87363a4c94eaabeefd8b930cb059f66b64c9f7d632862f23de3012da7660047b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "8d0aa0e4e328c2e391d4d972f361a19ff085f508cb0478f5967280953abd3520ee92cc1d19b21cb4e29e4a7bc557487ddbaee9807b751824241269367b9e92cb"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e5beca0365f4158cdab72a904eef2abcc88f5604bc52fce08b3439a5f1bef45bd64d715d733e624b58056f8d1c4707c3"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/commons-collections/commons-collections@3.2.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://commons.apache.org/collections/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "http://vmbuild.apache.org/continuum/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "http://issues.apache.org/jira/browse/COLLECTIONS"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "http://mail-archives.apache.org/mod_mbox/commons-user/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://svn.apache.org/viewvc/commons/proper/collections/trunk"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/ru.demo/sbom-demo@1.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.0?type=jar",
+        "pkg:maven/commons-collections/commons-collections@3.2.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/commons-collections/commons-collections@3.2.1?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}
